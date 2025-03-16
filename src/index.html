@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Main container for the Weather Dashboard -->
+
+  <div class="max-w-5xl mx-auto mt-10 p-5 bg-sky-300 shadow-lg rounded-lg">
+    
+    <!-- Header Section -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-white">Weather Dashboard</h1>
+    </div>
+    
+<!-- Search Section -->
+    <div class="mb-6">
+      <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
+        <input 
+          type="text" 
+          placeholder="E.g., New Delhi, Ranchi, Mumbai" 
+          class="city-input w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <div class="flex space-x-3">
+          <button class="search-btn bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+            Search
+          </button>
+          <button class="use-current-location-btn bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow-lg hover:bg-gray-300 transition duration-300">
+            Use Current Location
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Current Weather Card Section -->
+    <div class="current-weather-cards bg-white p-5 rounded-lg shadow-md text-blue-500 mb-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div>
+          <h2 class="text-2xl font-semibold">London (2024-04-23)</h2>
+          <p class="text-lg">Temperature: 7.06°C</p>
+          <p>Wind: 2.85 M/S</p>
+          <p>Humidity: 88%</p>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/ios/50/ffffff/light-rain.png" alt="Light Rain" />
+        </div>
+      </div>
+    </div>
+
+<!-- 5-Day Forecast Section -->
+    <h3 class="text-center m-4 font-bold text-2xl text-white">5-Day Forecast</h3>
+    <div class="weather-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+
+      <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+        <p class="text-lg font-semibold">(2024-04-24)</p>
+        <p>Temp: 5.67°C</p>
+        <p>Wind: 2.77 M/S</p>
+        <p>Humidity: 76%</p>
+      </div>
+
+      
+      <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+        <p class="text-lg font-semibold">(2024-04-25)</p>
+        <p>Temp: 5.23°C</p>
+        <p>Wind: 1.46 M/S</p>
+        <p>Humidity: 71%</p>
+      </div>
+
+
+      <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+        <p class="text-lg font-semibold">(2024-04-26)</p>
+        <p>Temp: 7.66°C</p>
+        <p>Wind: 1.87 M/S</p>
+        <p>Humidity: 91%</p>
+      </div>
+
+      
+      <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+        <p class="text-lg font-semibold">(2024-04-27)</p>
+        <p>Temp: 9.09°C</p>
+        <p>Wind: 3.77 M/S</p>
+        <p>Humidity: 95%</p>
+      </div>
+
+      
+      <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+        <p class="text-lg font-semibold">(2024-04-28)</p>
+        <p>Temp: 8.46°C</p>
+        <p>Wind: 4.23 M/S</p>
+        <p>Humidity: 94%</p>
+      </div>
+
+    </div>
+
+  </div>
+<!-- Linking the custom JavaScript file -->
+  <script src="./app.js"></script>
+</body>
+</html>
